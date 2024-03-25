@@ -1,0 +1,13 @@
+<h3 *ngIf="favjobLists.length==0" style="text-align: center;">No Favourite Selected</h3>
+<ul class="list-group" *ngIf="favjobLists.length>0">
+
+  <li class="list-group-item justify-content-between align-items-start">
+    <div class="ms-2 me-auto" *ngFor="let job of favjobLists">
+      <div class="dr">
+        <img src="{{job?.companyLogo}}" class="card-img-top" alt="...">
+        <div class="fw-bold">{{job?.title}}</div>
+      </div>
+      <div class="subdetail"> CompanyName: <span>{{job?.companyName}}</span> Reference: <span>{{job?.reference}}</span> </div>
+    </div>
+  </li>
+</ul>

@@ -1,0 +1,30 @@
+<button class="btn btn-primary" routerLink="step1" role="button" (click)="goBack()">Back</button>
+
+    <div>
+      <div class="d-flex flex-wrap">
+        <img src="{{jobDetailsObj?.companyLogo}}" class="card-img-top" alt="...">
+        <div class="fw-bold">{{jobDetailsObj?.companyName}}-{{jobDetailsObj?.title}}
+        </div>
+
+      </div>
+      <span class="badge bg-secondary">{{jobDetailsObj?.types}}</span>
+      <span class="badge bg-secondary">{{jobDetailsObj?.industries}}</span>
+
+        <div class="fw-bold">
+          Publish Date: <span class="fw-normal">{{jobDetailsObj?.publishDate | date: 'shortDate'}}</span>
+        </div>
+        <div class="fw-bold">
+          Location: <span class="fw-normal">{{jobDetailsObj?.location}}</span>
+        </div>
+        <div class="fw-bold">
+          Reference: <span class="fw-normal">{{jobDetailsObj?.reference}}</span>
+        </div>
+        <div class="fw-bold">
+          Description: <div class="fw-normal" [innerHTML]="jobDetailsObj?.description"></div>
+        </div>
+
+      <!-- <div class="subdetail"> CompanyName: <span>{{job?.companyName}}</span> Reference: <span>{{job?.reference}}</span> </div> -->
+
+    </div>
+
+

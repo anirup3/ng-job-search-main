@@ -1,0 +1,42 @@
+img {
+  max-width: 6% !important;
+}
+.dr{
+  /* display: inline-flex !important; */
+}
+
+.fw-bold{
+  position: relative !important;
+    /* top: 25px !important; */
+    left: 10px !important;
+}
+.active{
+  color: red;
+  background-color: red;
+}
+
+.me-auto
+{
+  /* display: flex !important; */
+  /* flex-wrap: wrap; */
+}
+.subdetail{
+  top: -14px !important;
+  position: relative !important;
+  right: -50px !important;
+}
+
+.badge {
+
+  /* display: flex !important;
+  position: static !important;
+  top: 36px !important;
+  max-height: 26px !important;
+  right: 410px !important; */
+  position: relative !important;
+  margin-left: 100px !important;
+}
+.-tag{
+  /* position: relative !important; */
+  /* margin-left: 105px !important; */
+}

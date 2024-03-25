@@ -1,0 +1,11 @@
+<h1 style="text-align: center;">Find Your Job</h1>
+
+<div class="menu-bar">
+  <!-- <app-joblist></app-joblist> -->
+  <button id="step1" routerLink="step1"  [ngClass]="{'routeInActive': getClass()}">Jobs</button>
+
+  <button id="step2" routerLink="step2" [ngClass]="{'routeInActive': !getClass()}">Favorites</button>
+  <p class="text-end">developed by Anirup Mukherjee</p>
+  <!-- <button id="step3" routerLink="step3" routerLinkActive="is-active">Job Details</button> -->
+</div>
+<router-outlet></router-outlet>

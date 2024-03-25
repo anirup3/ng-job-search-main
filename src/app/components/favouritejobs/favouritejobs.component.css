@@ -1,0 +1,28 @@
+
+img {
+  max-width: 6% !important;
+}
+.dr{
+  display: inline-flex !important;
+}
+
+.fw-bold{
+  position: relative !important;
+    /* top: 25px !important; */
+    left: 10px !important;
+}
+.active{
+  color: red;
+  background-color: red;
+}
+
+.me-auto
+{
+  /* display: flex !important; */
+  /* flex-wrap: wrap; */
+}
+.subdetail{
+  top: -14px !important;
+  position: relative !important;
+  right: -50px !important;
+}

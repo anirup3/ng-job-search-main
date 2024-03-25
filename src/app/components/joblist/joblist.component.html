@@ -1,0 +1,23 @@
+
+<ul class="list-group">
+  <!-- <li class="list-group-item fw-bold" *ngFor="let job of jobLists">{{job?.title}}
+    CompanyName: <span>{{job?.companyName}}</span> Reference: <span>{{job?.reference}}</span>
+  </li> -->
+
+
+  <li class="list-group-item justify-content-between align-items-start">
+    <div class="ms-2 me-auto" *ngFor="let job of jobLists">
+      <div class="dr">
+        <img src="{{job?.companyLogo}}" class="card-img-top" alt="...">
+        <div class="fw-bold" (click)="goToDetails(job);$event.stopPropagation()">{{job?.title}}
+          <!-- <span class = "fa fa-star checked"></span> -->
+        </div>
+        <span class = "icon-star" [ngClass]="{'active': job?.isFav}" (click)="markFavourite(job)"></span>
+      </div>
+
+      <div class="subdetail"> CompanyName: <span>{{job?.companyName}}</span> Reference: <span>{{job?.reference}}</span> </div>
+
+    </div>
+
+  </li>
+</ul>
